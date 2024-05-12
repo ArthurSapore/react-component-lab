@@ -1,11 +1,14 @@
+import { SearchIcon } from "lucide-react";
+import Button from "./components/Button";
+
 function App() {
   return (
-    <div className="h-screen w-screen flex justify-center items-center">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div className="flex h-screen w-screen  items-center justify-center gap-7">
+      <Button status="danger" icon="center">
+        <SearchIcon className="h-4 w-4" />
+      </Button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
